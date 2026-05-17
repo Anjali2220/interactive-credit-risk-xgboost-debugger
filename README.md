@@ -214,7 +214,7 @@ General interpretation scale:
 
 | Metric | Score |
 |---|---:|
-| Training Accuracy | 81.46%% |
+| Training Accuracy | 81.46% |
 | Testing Accuracy | 78.86%% |
 | Precision | 75.96% |
 | Recall | 98.75% |

@@ -1,0 +1,128 @@
+
+MODEL HEALTH REPORT
+===================
+
+Project:
+Interactive Credit Risk XGBoost Debugger using SHAP and Streamlit
+
+Report Generated:
+2026-05-14 11:16:07
+
+
+1. DATASET OVERVIEW
+-------------------
+Total rows: 614
+Total columns after dropping Loan_ID: 12
+Total features after encoding: 14
+Target column: Loan_Status_Y
+
+
+2. MODEL PERFORMANCE
+--------------------
+Training Accuracy: 0.9226
+Testing Accuracy: 0.7480
+Accuracy Gap: 0.1746
+
+Overfitting Status:
+Possible overfitting detected
+
+Suggestion:
+Training accuracy is much higher than testing accuracy. Try reducing max_depth, using regularization, or collecting more data.
+
+
+3. CLASS IMBALANCE CHECK
+------------------------
+Class Counts:
+Loan_Status_Y
+1    422
+0    192
+
+Class Percentages:
+Loan_Status_Y
+1    68.73
+0    31.27
+
+Imbalance Status:
+No severe class imbalance detected
+
+Suggestion:
+Class distribution is acceptable, but still monitor precision and recall.
+
+
+4. MISSING VALUE CHECK
+----------------------
+Missing Values Before Preprocessing (%):
+Gender               2.12
+Married              0.49
+Dependents           2.44
+Education            0.00
+Self_Employed        5.21
+ApplicantIncome      0.00
+CoapplicantIncome    0.00
+LoanAmount           3.58
+Loan_Amount_Term     2.28
+Credit_History       8.14
+Property_Area        0.00
+Loan_Status          0.00
+
+Missing Value Status:
+No excessive missing values detected
+
+Suggestion:
+Missing values are manageable and were handled using median/mode imputation.
+
+
+5. HIGHLY CORRELATED FEATURES CHECK
+-----------------------------------
+Correlation Status:
+No highly correlated features detected
+
+Highly Correlated Feature Pairs:
+
+No feature pairs above correlation threshold 0.85.
+
+
+Suggestion:
+No strong multicollinearity issue found.
+
+
+6. FEATURE LEAKAGE CHECK
+------------------------
+No direct feature leakage detected based on column names.
+
+
+7. CONFUSION MATRIX
+-------------------
+[[19 24]
+ [ 7 73]]
+
+
+8. CLASSIFICATION REPORT
+------------------------
+              precision    recall  f1-score   support
+
+           0       0.73      0.44      0.55        43
+           1       0.75      0.91      0.82        80
+
+    accuracy                           0.75       123
+   macro avg       0.74      0.68      0.69       123
+weighted avg       0.74      0.75      0.73       123
+
+
+
+9. FINAL DEBUGGING SUMMARY
+--------------------------
+- Possible overfitting detected
+- No severe class imbalance detected
+- No excessive missing values detected
+- No highly correlated features detected
+- No direct feature leakage detected based on column names.
+
+
+10. FINAL RECOMMENDATIONS
+-------------------------
+1. Use SHAP explanations to understand important model decisions.
+2. Monitor rejection class performance because the dataset has more approved loans than rejected loans.
+3. Try class balancing if recall for rejected loans remains low.
+4. Tune XGBoost hyperparameters further for better generalization.
+5. Avoid using ID columns such as Loan_ID because they do not add useful predictive value.

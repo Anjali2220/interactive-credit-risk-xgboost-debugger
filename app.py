@@ -836,7 +836,7 @@ with tab4:
         # =====================================================
 
         st.markdown(
-            '<div class="section-title">🧠 AI Decision Summary</div>',
+            '<div class="section-title">🧠 XAI (Explainable AI ) Decision Summary</div>',
             unsafe_allow_html=True
         )
 

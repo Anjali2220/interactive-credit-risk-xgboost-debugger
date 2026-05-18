@@ -271,19 +271,31 @@ An interactive Streamlit application was developed to:
 
 ## Dashboard Overview
 
-<img src="screenshots/dashboard1.png" width="900">
+<img src="Streamlit_screenshots/dashboard1.png" width="900">
 
 ---
 
 ## SHAP Explainability
 
-<img src="screenshots/dashboard2.png" width="900">
+<img src="Streamlit_screenshots/dashboard2.png" width="900">
 
 ---
 
 ## Loan Prediction Example
 
-<img src="screenshots/dashboard3.png" width="900">
+<img src="Streamlit_screenshots/dashboard3.png" width="900">
+
+---
+
+## Model Performance
+
+<img src="Streamlit_screenshots/dashboard4.png" width="900">
+
+---
+
+## Model Health Analysis
+
+<img src="Streamlit_screenshots/dashboard5.png" width="900">
 
 ---
 

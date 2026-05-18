@@ -287,13 +287,13 @@ An interactive Streamlit application was developed to:
 
 ---
 
-## Model Performance
+## Reasons Increasing Approval and Reasons Decreasing Approval
 
 <img src="Streamlit_screenshots/dashboard4.png" width="900">
 
 ---
 
-## Model Health Analysis
+## XAI (Explainable AI ) Decision Summary
 
 <img src="Streamlit_screenshots/dashboard5.png" width="900">
 

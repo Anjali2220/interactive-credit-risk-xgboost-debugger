@@ -275,6 +275,9 @@ An interactive Streamlit application was developed to:
 
 ---
 
+## MODEL PERFORMANCE
+<img src="Streamlit_screenshots/dashboard2.png" width="900">
+
 ## SHAP Explainability
 
 <img src="Streamlit_screenshots/dashboard3.png" width="900">

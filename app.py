@@ -483,32 +483,9 @@ with tab2:
         f"{metrics['f1']:.2%}"
     )
 
-    html("""
-    <div class="green-card">
 
-        Optimization Result:
 
-        The improved XGBoost model reduced overfitting
-        and improved generalization performance.
 
-    </div>
-    """)
-
-    st.markdown(
-        '<div class="section-title">🧮 Confusion Matrix</div>',
-        unsafe_allow_html=True
-    )
-
-    cm_df = pd.DataFrame(
-        metrics["confusion_matrix"],
-        index=["Actual Rejected", "Actual Approved"],
-        columns=["Predicted Rejected", "Predicted Approved"]
-    )
-
-    st.dataframe(
-        cm_df,
-        use_container_width=True
-    )
 
 
 # =========================================================
